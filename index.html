@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Form-validation</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <section id="err_con">
+
+  </section>
+
+  <section id="form-container">
+    <form id="form">
+      <div>
+
+        <label for="form-username">Username</label>
+        <input id="form-username" data-type-input="username" type="text" placeholder="Enter your Username" />
+        <p class="error-message" hidden>
+          mininmum 5-15 letters must and can consist special character and number
+        </p>
+      </div>
+
+      <div>
+        <label for=" form-email">E-Mail</label>
+        <input id="form-email" data-type-input="email" type="email" placeholder="Enter your E-Mail" />
+        <p class="error-message" hidden>
+          email in not valid
+        </p>
+      </div>
+
+      <div>
+        <label for=" form-phoneNum">Phone</label>
+        <input id="form-phoneNum" data-type-input="phoneNum" type="number" placeholder="Enter your phone  number" />
+        <p class="error-message" hidden>
+          Phone number is not valid
+        </p>
+      </div>
+      <div>
+        <label for="form-password">Password</label>
+        <input id="form-password" data-type-input="password" type="password" placeholder="Enter your password" />
+        <p class="error-message" hidden>
+          password should contain at least one number, one special character, one capital letter and one lowercase
+          letter
+          and length should be more than 8 letters
+        </p>
+      </div>
+      <div>
+
+        <label for="form-password-confirm">Confirm Password</label>
+        <input id="form-password-confirm" data-type-input="confirm-password" type="password"
+          placeholder="confirm your password" />
+        <p class="error-message" hidden>
+          it should be equal to password
+        </p>
+      </div>
+      <input accesskey="o" type="submit">
+    </form>
+  </section>
+  <script src="script.js"></script>
+</body>
+
+</html>
